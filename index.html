@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Pharma Hub</h1>
+        <p>Your trusted partner in healthcare innovation</p>
+    </header>
+
+    <section class="info-section">
+        <div class="info">
+            <h2>About Pharma Hub</h2>
+            <p>At Pharma Hub, we are dedicated to advancing healthcare solutions through research and innovation. Discover our range of trusted pharmaceutical products designed to improve lives.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="images/img1.jpg" alt="Medicine Bottle" onclick="openModal(this)">
+                <p>Advanced Pain Relievers</p>
+            </div>
+            <div class="product-item">
+                <img src="images/img2.jpg" alt="Vitamin Supplements" onclick="openModal(this)">
+                <p>Essential Vitamins</p>
+            </div>
+            <div class="product-item">
+                <img src="images/img3.jpg" alt="Medical Syringe" onclick="openModal(this)">
+                <p>Innovative Syringe Technology</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="mailto:mehmet.kaya@egeacademy.ca" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <div class="modal" id="lightbox">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pharma Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
